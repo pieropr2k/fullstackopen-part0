@@ -1,0 +1,11 @@
+note over browser:
+browser creates a new note and runs a render function
+update the page without a refresh
+end note
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: {"message":"note created"}
+
+note over browser:
+server get the new note and store it in the DB
+end note
